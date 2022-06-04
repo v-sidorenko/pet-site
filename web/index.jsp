@@ -2,15 +2,12 @@
 <% request.setCharacterEncoding("UTF-8"); %>
 <html>
     <head>
-        <title>JSP Page</title>
+        <title>Index</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        Сюда добавится ваш текст:${param["out"]} ${param["in"]}
-        <form action="index.jsp" method="post">
-            <input hidden="true" name="out" value="${param["out"]} ${param["in"]}">
-            Введите текст: <input type="text" name="in" value="" autofocus>
-            <input type="submit">
+        <h1>Работа с БД SQLite</h1>
+        <form action = "users"  method="get">
+            <input type="submit" value="Список пользователей">
         </form>
     </body>
 </html>
